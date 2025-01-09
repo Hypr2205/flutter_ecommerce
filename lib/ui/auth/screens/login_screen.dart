@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/common/app_commons.dart';
+import 'package:flutter_ecommerce/data/app_data.dart';
 import 'package:flutter_ecommerce/ui/auth/auth.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -55,7 +56,11 @@ class LoginScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute<void>(
-                    builder: (context) => ConfirmPasswordScreen(),
+                    builder: (context) => ConfirmPasswordScreen(
+                      loginRequest: LoginRequest(
+                        email: _emailController.text,
+                      ),
+                    ),
                   ),
                 );
               },
