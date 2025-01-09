@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011839227422",
+    "project_id": "flutter-ecommerce-hutech",
+    "storage_bucket": "flutter-ecommerce-hutech.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011839227422:android:6ed5e4f6e6e5ce602d000f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGtaoCVTACbcVk-4eiX0_xFv1MutmvpVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
