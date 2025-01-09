@@ -18,12 +18,15 @@ class ResetPasswordScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 20,
           children: [
-            Text(
-              'QUÊN MẬT KHẨU',
-              style: GoogleFonts.robotoMono(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            Center(
+              child: Text(
+                'QUÊN MẬT KHẨU',
+                style: GoogleFonts.robotoMono(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
             TextField(

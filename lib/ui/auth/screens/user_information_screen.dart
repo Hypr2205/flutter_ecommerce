@@ -47,12 +47,15 @@ class UserInformationScreen extends StatelessWidget {
                   spacing: 30,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'THÔNG TIN CÁ NHÂN',
-                      style: GoogleFonts.robotoMono(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                    Center(
+                      child: Text(
+                        'THÔNG TIN CÁ NHÂN',
+                        style: GoogleFonts.robotoMono(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                     BlocBuilder<GenderSelectCubit, int>(
@@ -83,8 +86,8 @@ class UserInformationScreen extends StatelessWidget {
                                     child: Text(
                                       'Nam',
                                       style: TextStyle(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
                                       ),
                                     ),
                                   ),
@@ -113,8 +116,8 @@ class UserInformationScreen extends StatelessWidget {
                                     child: Text(
                                       'Nữ',
                                       style: TextStyle(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
                                       ),
                                     ),
                                   ),
@@ -192,7 +195,7 @@ class UserInformationScreen extends StatelessWidget {
                                 params: registerRequest,
                               );
                         },
-                        title: 'Finish',
+                        title: 'Hoàn tất',
                       );
                     },
                   ),

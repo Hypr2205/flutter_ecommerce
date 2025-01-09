@@ -52,7 +52,8 @@ class CommonReactiveButton extends StatelessWidget {
             title,
             style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
             ),
           ),
     );

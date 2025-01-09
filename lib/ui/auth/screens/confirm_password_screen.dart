@@ -18,12 +18,15 @@ class ConfirmPasswordScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 25,
           children: [
-            Text(
-              'XÁC NHẬN MẬT KHẨU',
-              style: GoogleFonts.robotoMono(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            Center(
+              child: Text(
+                'XÁC NHẬN MẬT KHẨU',
+                style: GoogleFonts.robotoMono(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
             PasswordTextFiled(passwordController: _passwordController),

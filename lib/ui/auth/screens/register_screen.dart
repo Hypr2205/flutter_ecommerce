@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/common/app_commons.dart';
+import 'package:flutter_ecommerce/data/app_data.dart';
 import 'package:flutter_ecommerce/ui/auth/auth.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,12 +26,15 @@ class RegisterScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 25,
           children: [
-            Text(
-              'ĐĂNG KÝ TÀI KHOẢN',
-              style: GoogleFonts.robotoMono(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            Center(
+              child: Text(
+                'ĐĂNG KÝ TÀI KHOẢN',
+                style: GoogleFonts.robotoMono(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
             TextField(
@@ -75,7 +79,14 @@ class RegisterScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute<void>(
-                    builder: (context) => ConfirmPasswordScreen(),
+                    builder: (context) => UserInformationScreen(
+                      registerRequest: RegisterRequest(
+                        firstName: _firstNameController.text,
+                        email: _emailController.text,
+                        lastName: _lastNameController.text,
+                        password: _passwordController.text,
+                      ),
+                    ),
                   ),
                 );
               },

@@ -8,5 +8,6 @@ Future<void> injectDependencies() async {
   sl
     ..registerSingleton<FirebaseAuthService>(FirebaseAuthService())
     ..registerSingleton<AuthRepository>(AuthRepositoryImpl())
-    ..registerSingleton<RegisterFeature>(RegisterFeature());
+    ..registerSingleton<RegisterFeature>(RegisterFeature())
+    ..registerSingleton<GetAgeFeature>(GetAgeFeature());
 }

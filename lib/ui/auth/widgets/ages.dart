@@ -9,7 +9,7 @@ class Ages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height / 2.7,
+      height: MediaQuery.of(context).size.height / 2,
       child: BlocBuilder<AgeDisplayCubit, AgeDisplayState>(
         builder: (context, state) {
           if (state is Loading) {
@@ -28,6 +28,9 @@ class Ages extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                 state.message,
+                style: const TextStyle(
+                  fontSize: 16,
+                ),
               ),
             );
           }
@@ -52,9 +55,10 @@ class Ages extends StatelessWidget {
           child: Text(
             ages[index].data()['value'] as String,
             style: const TextStyle(
-              fontSize: 18,
+              fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
+            textAlign: TextAlign.center,
           ),
         );
       },
