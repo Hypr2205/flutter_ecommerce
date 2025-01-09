@@ -1,5 +1,5 @@
 class AssetsConfig {
-  static const _assetsPath = 'assets/';
+  static const _assetsPath = 'assets';
   static const _imageAssetsPath = '$_assetsPath/images';
   static const _svgAssetsPath = '$_assetsPath/vectors';
 
